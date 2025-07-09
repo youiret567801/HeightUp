@@ -144,9 +144,9 @@ LL_TYPE_INSTANCE_HOOK(
     Scheduler&           callbackContext,
     std::string          name
 ) {
-    if (dimId == VanillaDimensions::Nether()) {
-        heightRange.mMax = 256;
-    }
+    // if (dimId == VanillaDimensions::Nether()) {
+    heightRange.mMax = 512; // made this work in all dimensions
+    // }
     return origin(level, dimId, heightRange, callbackContext, name);
 }
 
